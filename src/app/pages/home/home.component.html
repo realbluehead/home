@@ -8,14 +8,14 @@
   <!-- Projects Section -->
   <section class="projects-section">
     <div class="section-header">
-      <h2 class="section-title">Projectes Destacats</h2>
+      <h2 class="section-title">Projects</h2>
     </div>
 
     <main class="portfolio-main">
       <!-- Loading State -->
       <div *ngIf="projectService.loading()" class="loading-state">
         <div class="spinner"></div>
-        <p>Carregant projectes...</p>
+        <p>Loading projects...</p>
       </div>
 
       <!-- Error State -->
@@ -43,7 +43,7 @@
         "
         class="empty-state"
       >
-        <p>No hi ha projectes disponibles</p>
+        <p>No projects available</p>
       </div>
     </main>
   </section>

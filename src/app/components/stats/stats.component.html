@@ -8,12 +8,12 @@
       >
         <div class="stat-header">
           <div class="stat-icon">{{ getIcon(stat.icon) }}</div>
-        </div>
-        <div class="stat-content">
           <div class="stat-value">
             <span class="value">{{ stat.value }}</span>
             <span class="unit" *ngIf="stat.unit">{{ stat.unit }}</span>
           </div>
+        </div>
+        <div class="stat-content">
           <p class="stat-description" *ngIf="stat.description">
             {{ stat.description }}
           </p>

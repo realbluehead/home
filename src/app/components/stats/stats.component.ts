@@ -27,31 +27,32 @@ export class StatsComponent implements OnInit {
 
   stats: StatCard[] = [
     {
-      label: "Edat",
+      label: "Age",
       value: "",
-      unit: "anys",
+      unit: "years",
       icon: "calendar",
-      description: "L'edat no perdona",
+      description: "Age doesn't forgive",
     },
     {
-      label: "Anys Programant",
+      label: "Years Programming",
       value: "",
-      unit: "anys",
+      unit: "years",
       icon: "code",
-      description: "Programant (From Basic to Angular)",
+      description: "Coding (From Basic to Angular)",
     },
     {
-      label: "Projectes Open Source",
+      label: "Open Source Projects",
       value: 3,
+      unit: "projects",
       icon: "github",
-      description: "Projectes públics a GitHub",
+      description: "Play with them on GitHub",
     },
     {
-      label: "Distancia a Sant Andreu",
+      label: "Distance to Sant Andreu",
       value: "--",
       unit: "km",
       icon: "location",
-      description: "Des de la teva ubicació",
+      description: "From your location",
     },
   ];
 
