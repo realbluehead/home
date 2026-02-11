@@ -1,8 +1,9 @@
 .hero {
-  background: #ffffff;
-  padding: 40px 24px;
+  background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+  padding: 60px 24px;
   text-align: center;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(255, 152, 48, 0.15);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 
   @media (max-width: 768px) {
     padding: 32px 24px;
@@ -38,7 +39,10 @@
   margin: 0;
   font-size: 24px;
   font-weight: 800;
-  color: #1a1a1a;
+  background: linear-gradient(135deg, #ffa500 0%, #ff9830 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   line-height: 1;
   letter-spacing: -0.5px;
 
@@ -53,7 +57,7 @@
 
 .separator {
   font-size: 18px;
-  color: #cccccc;
+  color: #ff9830;
   font-weight: 300;
 
   @media (max-width: 480px) {
@@ -64,8 +68,8 @@
 .hero-role {
   margin: 0;
   font-size: 14px;
-  color: #888888;
-  font-weight: 500;
+  color: #ffa500;
+  font-weight: 600;
   letter-spacing: 0.5px;
 
   @media (max-width: 768px) {
@@ -98,18 +102,19 @@
   justify-content: center;
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  background: #f5f5f5;
-  color: #1a1a1a;
+  border-radius: 6px;
+  background: rgba(45, 55, 72, 0.8);
+  color: #cbd5e0;
   text-decoration: none;
   transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
-  border: 2px solid transparent;
+  border: 1px solid rgba(255, 152, 48, 0.2);
 
   &:hover {
-    background: #1a1a1a;
+    background: linear-gradient(135deg, #ff9830 0%, #ffa500 100%);
     color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 16px rgba(255, 152, 48, 0.3);
+    border-color: #ff9830;
   }
 
   &:active {
