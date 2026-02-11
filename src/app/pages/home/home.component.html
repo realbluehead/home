@@ -1,0 +1,50 @@
+<div class="home-container">
+  <!-- Hero Section -->
+  <app-hero></app-hero>
+
+  <!-- Stats Section -->
+  <app-stats></app-stats>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <div class="section-header">
+      <h2 class="section-title">Projectes Destacats</h2>
+    </div>
+
+    <main class="portfolio-main">
+      <!-- Loading State -->
+      <div *ngIf="projectService.loading()" class="loading-state">
+        <div class="spinner"></div>
+        <p>Carregant projectes...</p>
+      </div>
+
+      <!-- Error State -->
+      <div *ngIf="projectService.error()" class="error-state">
+        <p>{{ projectService.error() }}</p>
+      </div>
+
+      <!-- Projects Grid - Masonry Layout -->
+      <div
+        *ngIf="!projectService.loading() && !projectService.error()"
+        class="projects-grid"
+      >
+        <app-project-card
+          *ngFor="let project of projectService.projects()"
+          [project]="project"
+        ></app-project-card>
+      </div>
+
+      <!-- Empty State -->
+      <div
+        *ngIf="
+          !projectService.loading() &&
+          !projectService.error() &&
+          projectService.projects().length === 0
+        "
+        class="empty-state"
+      >
+        <p>No hi ha projectes disponibles</p>
+      </div>
+    </main>
+  </section>
+</div>

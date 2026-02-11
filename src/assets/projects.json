@@ -1,0 +1,55 @@
+[
+  {
+    "id": "1",
+    "title": "E-commerce Platform",
+    "description": "Plataforma de comerç electrònic completa amb checkout, pagaments i gestió d'inventari en temps real.",
+    "imageUrl": "https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=300&fit=crop",
+    "demoUrl": "https://ecommerce-demo.example.com",
+    "repoUrl": "https://github.com/yourusername/ecommerce-platform",
+    "tags": ["Angular", "TypeScript", "Node.js", "MongoDB"]
+  },
+  {
+    "id": "2",
+    "title": "Task Management App",
+    "description": "Aplicació de gestió de tasques amb col·laboració en temps real, comentaris i assignació de tasques.",
+    "imageUrl": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop",
+    "demoUrl": "https://tasks-demo.example.com",
+    "repoUrl": "https://github.com/yourusername/task-manager",
+    "tags": ["Angular", "Firebase", "WebSocket", "Material UI"]
+  },
+  {
+    "id": "3",
+    "title": "Analytics Dashboard",
+    "description": "Dashboard d'anàlitiques amb visualitzacions interactives, filtres avançats i exportació de dades.",
+    "imageUrl": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=300&fit=crop",
+    "demoUrl": "https://analytics-demo.example.com",
+    "repoUrl": "https://github.com/yourusername/analytics-dashboard",
+    "tags": ["Angular", "Charts.js", "D3.js", "REST API"]
+  },
+  {
+    "id": "4",
+    "title": "Social Media App",
+    "description": "Xarxa social amb feeds, likes, comentaris, misatges directes i seguiment d'usuaris.",
+    "imageUrl": "https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=500&h=300&fit=crop",
+    "repoUrl": "https://github.com/yourusername/social-app",
+    "tags": ["Angular", "Node.js", "PostgreSQL", "Socket.io"]
+  },
+  {
+    "id": "5",
+    "title": "Weather App",
+    "description": "Aplicació del temps amb predicció de 7 dies, mapa interactiu i alertes meteorològiques.",
+    "imageUrl": "https://images.unsplash.com/photo-1446776877081-d282a0f896e2?w=500&h=300&fit=crop",
+    "demoUrl": "https://weather-demo.example.com",
+    "repoUrl": "https://github.com/yourusername/weather-app",
+    "tags": ["Angular", "OpenWeather API", "Maps", "RxJS"]
+  },
+  {
+    "id": "6",
+    "title": "Fitness Tracker",
+    "description": "Aplicació de seguiment de fitness amb registre d'exercicis, estadístiques i plans personalitzats.",
+    "imageUrl": "https://images.unsplash.com/photo-1517836357463-d25ddfcbf042?w=500&h=300&fit=crop",
+    "demoUrl": "https://fitness-demo.example.com",
+    "repoUrl": "https://github.com/yourusername/fitness-tracker",
+    "tags": ["Angular", "HealthKit API", "Charts", "PWA"]
+  }
+]
