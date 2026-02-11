@@ -1,5 +1,6 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit, effect } from "@angular/core";
 import { CommonModule } from "@angular/common";
+import { ProjectService } from "../../services/project.service";
 
 interface StatCard {
   label: string;
@@ -17,6 +18,12 @@ interface StatCard {
   styleUrls: ["./stats.component.scss"],
 })
 export class StatsComponent implements OnInit {
+  constructor(readonly projectService: ProjectService) {
+    // Watch for changes in projects and update the stats
+    effect(() => {
+      this.stats[2].value = this.projectService.projects().length;
+    });
+  }
   birthDate = new Date(1978, 0, 25);
   programmingStartDate = new Date(1988, 0, 1);
   // Coordenades del centre de Sant Andreu, Barcelona
@@ -42,7 +49,7 @@ export class StatsComponent implements OnInit {
     },
     {
       label: "Open Source Projects",
-      value: 3,
+      value: 0,
       unit: "projects",
       icon: "github",
       description: "Play with them on GitHub",

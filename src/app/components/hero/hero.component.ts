@@ -1,6 +1,13 @@
 import { Component } from "@angular/core";
 import { CommonModule } from "@angular/common";
 
+interface SocialLink {
+  icon: "github" | "linkedin" | "email";
+  url: string;
+  label: string;
+  ariaLabel: string;
+}
+
 @Component({
   selector: "app-hero",
   standalone: true,
@@ -9,24 +16,24 @@ import { CommonModule } from "@angular/common";
   styleUrls: ["./hero.component.scss"],
 })
 export class HeroComponent {
-  socialLinks = [
+  socialLinks: SocialLink[] = [
     {
       icon: "github",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/realbluehead",
       label: "GitHub",
-      ariaLabel: "Visita el meu GitHub",
+      ariaLabel: "Visit my GitHub",
     },
     {
       icon: "linkedin",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://www.linkedin.com/in/carles-rius-2642388/",
       label: "LinkedIn",
-      ariaLabel: "Visita el meu LinkedIn",
+      ariaLabel: "Visit my LinkedIn",
     },
     {
       icon: "email",
-      url: "mailto:your.email@example.com",
+      url: "mailto:realbluehead@gmail.com",
       label: "Email",
-      ariaLabel: "Envia'm un correu",
+      ariaLabel: "Send me an email",
     },
   ];
 }
